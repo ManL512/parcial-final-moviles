@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "786386398025",
+    "firebase_url": "https://fir-parcial-77ced-default-rtdb.firebaseio.com",
+    "project_id": "fir-parcial-77ced",
+    "storage_bucket": "fir-parcial-77ced.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786386398025:android:a51cfa0069b0bf7db88898",
+        "android_client_info": {
+          "package_name": "com.example.views_front"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhFbD8Wf02UmBQW0MFuceyzcW6WIW7wXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
