@@ -11,6 +11,7 @@ from .models import User, Message, FCMToken
 from .serializers import UserSerializer, LoginSerializer, MessageSerializer
 from firebase_admin import messaging
 
+
 class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -97,3 +98,11 @@ class SendMessageView(APIView):
         )
         response = messaging.send_multicast(message)
         return response
+
+class UserListView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        users = User.objects.all()
+        serializer = UserSerializer(users, many=True)
+        return Response(serializer.data)
